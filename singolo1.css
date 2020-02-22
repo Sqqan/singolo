@@ -1,8 +1,31 @@
 @font-face {
     font-family: Lato;
     src: url(assets/Lato-Regular.ttf);
-  
+    font-weight: 400;
+    font-style: normal;
   }
+  
+  @font-face {
+    font-family: Lato;
+    src: url(assets/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Lato;
+    src: url(assets/Lato-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Lato;
+    src: url(assets/Lato-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+  }
+  
   
   body {
     margin: 0;
@@ -10,14 +33,14 @@
     font-family: Lato, sans-serif;
   }
   
-  .main {
+  .maindbox {
     width: 1020px;
     margin: 0 auto;
   }
   
   .header {
     height: 89px;
-    font-weight: 500;
+    font-weight: 700;
     background-color: #2D303A;
     border-bottom: 6px solid #323746;
   }
@@ -29,17 +52,17 @@
     margin-left: 40px;
     margin-top: 29px;
     font-size: 25px;
-    letter-spacing: 0.001px;
+    letter-spacing: -0.7px;
   }
   
-  .logo-text {
+  .logotext {
     display: inline-block;
     margin: 0;
     color: white;
     font-size: inherit;
   }
   
-  .logo-simbol {
+  .logosimbol {
     margin-left: -8px;
     color: #F06C64;
   }
@@ -53,15 +76,15 @@
     color: #F06C64;
   }
   
-  .navigation {
+  .headernavigation {
     display: inline-block;
   }
   
-  .navigation-list {
+  .navigation {
     padding: 0;
   }
   
-  .navigation-list li {
+  .navigation li {
     display: inline;
     margin-right: 21px;
     margin-top: 30px;
@@ -72,12 +95,12 @@
   
   
   
-  .navigation-list li:last-child {
+  .navigation li:last-child {
     margin-right: 0;
   }
   
   
-  .navigation-list li:not(:first-child)::before {
+  .navigation li:not(:first-child)::before {
     content: ".";
     position: relative;
     bottom: 3px;
@@ -88,7 +111,7 @@
     color: #494e62;
   }
   
-  .navigation-list li a:hover {
+  .navigation li a:hover {
     cursor: pointer;
     text-decoration: underline;
     color: coral;
@@ -133,27 +156,28 @@
     border-bottom: 6px solid #dedfe3;
   }
   
-  .services {
+  .services-list{
     padding-left: 40px;
     height: 495px;
-    color: #585f7f;
+    color: #666d89;
     background-color: #F2F2F2;
   }
   
   
-  .heading {
+  .OurServices {
     display: inline-block;
     margin-top: 59px;
     font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 0.4px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
   }
   
-  .services p {
+  .services-list p {
     margin-top: 18px;
     margin-bottom: 42px;
     font-size: 17px;
-    letter-spacing: 0.29px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
     line-height: 1.8;
   }
   
@@ -161,7 +185,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
   
   .service {
     width: 300px;
@@ -172,12 +195,12 @@
   
   .service img {
     float: left;
-    margin: 5px 20px 30px 2px;
+    margin: 5px 20px 40px 2px;
   
   }
   
   .topic {
-    letter-spacing: 0.15px;
+    letter-spacing: -0.2px;
     font-size: 18px;
     font-weight: 900;
   }
@@ -188,7 +211,8 @@
     height: 62.4px;
     overflow: hidden;
     font-size: 11px;
+    font-weight: 400;
     text-align: justify;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.35px;
     line-height: 1.9;
   }
